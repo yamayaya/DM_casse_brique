@@ -14,13 +14,8 @@ def vaisseau_deplacement(x, y):
     if pyxel.btn(pyxel.KEY_LEFT):
         if (x > 0) :
             x = x - 1
-    if pyxel.btn(pyxel.KEY_DOWN):
-        if (y < 120) :
-            y = y + 1
-    if pyxel.btn(pyxel.KEY_UP):
-        if (y > 0) :
-            y = y - 1
-    return x, y
+
+    return x
 
 
 def update():
