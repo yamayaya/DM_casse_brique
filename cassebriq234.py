@@ -2,7 +2,7 @@ import pyxel
 
 pyxel.init(128, 128, title="Nuit du c0de")
 
-vaisseau_x = 60
+vaisseau_x = 10
 vaisseau_y = 60
 
 def vaisseau_deplacement(x, y):
