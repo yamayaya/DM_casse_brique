@@ -6,8 +6,8 @@ from Classes.Plato import Plato
 pyxel.init(128, 128, title="Nuit du c0de")
 
 
-plato = Plato(60, 120, 20, 4, 2)
-ball = Ball(30, 30, 5, 8)
+plato = Plato(60, 120, 10, 4, 2)
+#ball = Ball(120, 120, 5, 8)
 
 def update():
 
