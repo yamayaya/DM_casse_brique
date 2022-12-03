@@ -7,13 +7,12 @@ pyxel.init(128, 128, title="Nuit du c0de")
 
 
 plato = Plato(60, 120, 10, 4, 2)
-#ball = Ball(120, 120, 5, 8)
+ball = Ball(60, 60, 3, 1, 0, 3)
 
 def update():
 
-    global vaisseau_x, vaisseau_y
-    vaisseau_x, vaisseau_y = plato.deplacement()
-
+    plato.deplacement()
+    ball.deplacement_from_start()
 
 def draw():
     pyxel.cls(0)
