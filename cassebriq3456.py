@@ -1,7 +1,7 @@
 import pyxel
-
-from Classes.Ball import Ball
-from Classes.Plato import Plato
+from Brick import Brick
+from Ball import Ball
+from Plato import Plato
 
 pyxel.init(128, 128, title="Nuit du c0de")
 

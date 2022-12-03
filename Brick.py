@@ -1,7 +1,7 @@
 import pyxel
 
-from Classes.Ball import Ball
-from Classes.Plato import Plato
+from Ball import Ball
+from Plato import Plato
 
 class Brick:
     def __init__(self, x_start, y, dx, dy, colour):
