@@ -41,3 +41,5 @@ class Plato:
                 pass
 
         return self.x_start, self.y
+
+plato = Plato(60, 120, 10, 4, 2)
