@@ -2,6 +2,8 @@ import pyxel
 
 
 class Plato:
+    crossed_line_timer = 0
+    game_timer = 0
     def __init__(self, x_start, y, dx, dy, colour):
         self.x_start = x_start
         self.y = y
@@ -41,5 +43,12 @@ class Plato:
                 pass
 
         return self.x_start, self.y
+    @staticmethod
+    def draw_normal_bound():
+        pyxel.line(0, plato.y + plato.dy / 2, 128, plato.y + plato.dy / 2, 13)
+
+    @staticmethod
+    def draw_crossed_bound():
+        pyxel.line(0, plato.y + plato.dy / 2, 128, plato.y + plato.dy / 2, 8)
 
 plato = Plato(60, 120, 10, 4, 2)
