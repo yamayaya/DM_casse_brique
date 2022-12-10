@@ -140,4 +140,4 @@ class Ball:
                 flag = True
         return flag
 
-ball = Ball(30, 60, 2, 1, 1, 0, 3)
+ball = Ball(plato.x_start+3/2*plato.dx, 60, 2, 1, 1, 0, 3)
