@@ -64,21 +64,27 @@ class Ball:
                 if i.type == 0:
                     Brick.bricks.remove(i)
 
-        if self.deplacement_check_bounds_up_down(): #ВВЕРХ И НИЗ
+        if self.deplacement_check_bounds_up() or self.deplacement_check_bounds_down(): #ВВЕРХ И НИЗ
             Plato.draw_crossed_bound()
             self.yv = -self.yv
 
         if self.deplacement_check_bounds_left_right(): #ЛЕВЫЙ И ПРАВЫЙ
             self.xv = -self.xv
 
-    def deplacement_check_bounds_up_down(self):
-        if (self.size[0][1] <= 0 or self.size[1][1] >= plato.y + plato.dy / 2):  # ВВЕРХ И НИЗ
+    def deplacement_check_bounds_up(self):
+        if (self.size[0][1] <= 0):  # ВВЕРХ И НИЗ
             Plato.crossed_line_timer = 30
             return True
         else:
             Plato.crossed_line_timer -= 1
             return False
-
+    def deplacement_check_bounds_down(self):
+        if (self.size[1][1] >= plato.y + plato.dy / 2):  # ВВЕРХ И НИЗ
+            Plato.crossed_line_timer = 30
+            return True
+        else:
+            Plato.crossed_line_timer -= 1
+            return False
     def deplacement_check_bounds_left_right(self):
         if (self.size[0][0] <= 0 or self.size[2][0] >= 128): #ЛЕВЫЙ И ПРАВЫЙ
             return True

@@ -24,13 +24,13 @@ class Plato:
         if pyxel.btn(pyxel.KEY_RIGHT):
             self.update_size_plato()
             if (self.size[3][0] <= 124):
-                self.x_start += 1
+                self.x_start += 2
             else:
                 pass
         elif pyxel.btn(pyxel.KEY_LEFT):
             self.update_size_plato()
             if (self.size[0][0] >= 0):
-                self.x_start -= 1
+                self.x_start -= 2
             else:
                 pass
         elif pyxel.btn(pyxel.KEY_DOWN):
